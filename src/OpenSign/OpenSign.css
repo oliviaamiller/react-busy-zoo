@@ -1,7 +1,7 @@
 .sign-words {
-    color: white;
-    border: white 6px solid;
-    background-color: rgbrgb(241,235,156);
+    color: rgb(241,235,156);
+    border: rgb(241,235,156) 6px solid;
+    background-color: white;
     font-weight: bold;
     font-size: 3rem;
     margin-bottom: 2rem;

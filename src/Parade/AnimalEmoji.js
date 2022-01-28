@@ -1,3 +1,5 @@
+import './Parade.css';
+
 export default function AnimalEmoji({ animal }) {
   return <div className='animal'>
     {animal === 'flamingo' && '🦩'}
