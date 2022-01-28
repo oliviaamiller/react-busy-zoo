@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+
+  const [crocSize, setCrocSize] = useState(10);
+  const [gorillaSize, setGorillaSize] = useState(10);
+  const [animalArray, setAnimalArray] = useState(['rhino', 'giraffe', 'camel']);
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='fight'>
+        <div className='croc'>
+          <p style={{ fontSize: `${crocSize}rem` }}>🐊</p>
+          <button onClick={() => setCrocSize(crocSize + 1)}>Croc gets stronger</button>
+          <button onClick={() => setGorillaSize(gorillaSize - 1)}>Croc attacks Gorilla</button>
+        </div>
+        <div className='gorilla'>
+          <p style={{ fontSize: `${gorillaSize}rem` }}>🦍</p>
+          <button onClick={() => setGorillaSize(gorillaSize + 1)}>Gorilla gets stronger</button>
+          <button onClick={() => setCrocSize(crocSize - 1)}>Gorilla attacks Croc</button>
+        </div>
+
+      </div>
+     
     </div>
   );
 }
