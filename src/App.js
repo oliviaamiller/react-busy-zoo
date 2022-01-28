@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import AnimalList from './Animals/AnimalList';
 
 function App() {
 
@@ -26,6 +27,11 @@ function App() {
         {isOpen ? 'OPEN' : 'CLOSED'}
         <button onClick={() => setIsOpen(false)}>Closed</button>
         <button onClick={() => setIsOpen(true)}>Open</button>
+      </div>
+      <AnimalList animalArray={animalArray}/>
+      <div className='parade'>
+        <button onClick={() => setAnimalArray([...animalArray, 'flamingo'])}>flamingo</button>
+
       </div>
     </div>
   );
