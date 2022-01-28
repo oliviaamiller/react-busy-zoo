@@ -31,7 +31,7 @@ function App() {
       <AnimalList animalArray={animalArray}/>
       <div className='parade'>
         <button onClick={() => setAnimalArray([...animalArray, 'flamingo'])}>flamingo</button>
-
+        
       </div>
     </div>
   );
