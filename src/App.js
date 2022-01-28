@@ -1,31 +1,40 @@
 import './App.css';
 import { useState } from 'react';
 import Parade from './Parade/Parade';
-import Sign from './Sign/Sign';
+import OpenSign from './OpenSign/OpenSign';
 
 function App() {
 
-  const [crocSize, setCrocSize] = useState(10);
-  const [gorillaSize, setGorillaSize] = useState(10);
+  const [crocSize, setCrocSize] = useState(7);
+  const [gorillaSize, setGorillaSize] = useState(7);
   const [animalArray, setAnimalArray] = useState(['zebra', 'giraffe', 'hippo']);
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="App">
       <div className='fight'>
-        <div className='croc'>
-          <p style={{ fontSize: `${crocSize}rem` }}>🐊</p>
-          <button onClick={() => setCrocSize(crocSize + 1)}>Croc gets stronger</button>
-          <button onClick={() => setGorillaSize(gorillaSize - 1)}>Croc attacks Gorilla</button>
+        <div className='left-fight'>
+          <div className='croc-buttons'>
+            <button onClick={() => setCrocSize(crocSize + 1)}>Croc gets stronger</button>
+            <button onClick={() => setGorillaSize(gorillaSize - 1)}>Croc attacks Gorilla</button>
+          </div>
+          <div className='croc'>
+            <p style={{ fontSize: `${crocSize}rem` }}>🐊</p>
+          </div>
+         
         </div>
-        <div className='gorilla'>
-          <p style={{ fontSize: `${gorillaSize}rem` }}>🦍</p>
-          <button onClick={() => setGorillaSize(gorillaSize + 1)}>Gorilla gets stronger</button>
-          <button onClick={() => setCrocSize(crocSize - 1)}>Gorilla attacks Croc</button>
+        <div className='right-fight'>
+          <div className='gorilla'>
+            <p style={{ fontSize: `${gorillaSize}rem` }}>🦍</p>
+          </div>
+          <div className='gorilla-buttons'>
+            <button onClick={() => setGorillaSize(gorillaSize + 1)}>Gorilla gets stronger</button>
+            <button onClick={() => setCrocSize(crocSize - 1)}>Gorilla attacks Croc</button>
+          </div>
         </div>
       </div>
       <div className='sign'>
-        <Sign isOpen={isOpen}/>
+        <OpenSign isOpen={isOpen}/>
         <button onClick={() => setIsOpen(false)}>Closed</button>
         <button onClick={() => setIsOpen(true)}>Open</button>
       </div>

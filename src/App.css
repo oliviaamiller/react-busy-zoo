@@ -6,6 +6,26 @@ html, body, #root, .App {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 2rem;
+}
+
+.left-fight, .right-fight {
+  display: flex;
+  flex-direction: row;
+}
+
+.croc-buttons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 2rem;
+}
+
+.gorilla-buttons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 2rem;
 }
 
 .sign {
@@ -28,4 +48,12 @@ html, body, #root, .App {
   display: flex;
   flex-direction: row;
   font-size: 5rem;
+}
+
+path {
+  fill: transparent;
+}
+
+text {
+  fill: #FF9800;
 }
