@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import Parade from './Parade/Parade';
+import Sign from './Sign/Sign';
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
         </div>
       </div>
       <div className='sign'>
-        {isOpen ? 'OPEN' : 'CLOSED'}
+        <Sign isOpen={isOpen}/>
         <button onClick={() => setIsOpen(false)}>Closed</button>
         <button onClick={() => setIsOpen(true)}>Open</button>
       </div>
