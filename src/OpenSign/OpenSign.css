@@ -2,4 +2,8 @@
     color: red;
     font-weight: bold;
     font-size: 4rem;
+    border: red 6px solid;
+    margin-bottom: 2rem;
+    padding: .5rem;
+    letter-spacing: .5rem;
 }
