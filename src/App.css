@@ -67,16 +67,22 @@ html, body, #root, .App {
   margin-bottom: 2rem;
 
 }
-
-.sign button {
+.sign-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+}
+.sign button {
   width: 8rem;
-  margin-bottom: .5rem;
-  color:royalblue;
-  border: royalblue 1px solid;
-  background-color: saddlebrown ;
+  color: rgb(203, 84, 0);
+  background-color: rgb(255, 186, 133);
+  border: none;
+  border-radius: 10px;
+  padding: .4rem;
+  font-family: sans-serif;
+  text-transform: lowercase;
+  font-weight: 300;
+  letter-spacing: .1rem;
+  margin: 0rem .25rem;
 
 }
 
@@ -84,7 +90,7 @@ html, body, #root, .App {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 7rem;
+  margin-top: 6rem;
 }
 
 .parade p {
@@ -98,14 +104,15 @@ html, body, #root, .App {
 }
 
 .parade button {
-  color: saddlebrown;
+  color: rgb(203, 84, 0);
   margin: 4px 2px;
-  background-color: rgb(134, 165, 255);
+  background-color: rgb(138, 171, 255);
   border: none;
   border-radius: 10px;
   padding: .4rem;
   font-family: sans-serif;
   text-transform: lowercase;
+  font-weight: 300;
   letter-spacing: .1rem;
 }
 

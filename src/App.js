@@ -36,8 +36,10 @@ function App() {
       <div className='sign'>
         <p>Welcome to the Zoo! We are ...</p>
         <OpenSign isOpen={isOpen}/>
-        <button onClick={() => setIsOpen(false)}>Good Night</button>
-        <button onClick={() => setIsOpen(true)}>Good Morning</button>
+        <div className='sign-buttons'>
+          <button onClick={() => setIsOpen(false)}>Good Night!</button>
+          <button onClick={() => setIsOpen(true)}>Good Morning!</button>
+        </div>
       </div>
       <div className='parade'>
         <Parade animals={animalArray}/>
