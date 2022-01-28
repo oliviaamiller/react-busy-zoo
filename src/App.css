@@ -6,6 +6,7 @@ html, body, #root, .App {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex: 1;
   margin: 2rem;
 }
 
@@ -28,32 +29,28 @@ html, body, #root, .App {
   right: 2rem;
 }
 
+.croc {
+  margin-right: 4rem;
+}
+
+.gorilla {
+  margin-left: 4rem;
+}
+
 .sign {
   display: flex;
   flex-direction: column;
   align-content: center;
   flex-wrap: wrap;
-  margin-top: 20px;
-  color: red;
-  font-weight: bold;
 }
 
 .parade {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
 
 }
 
-.animal-list {
-  display: flex;
-  flex-direction: row;
-  font-size: 5rem;
-}
 
-path {
-  fill: transparent;
-}
 
-text {
-  fill: #FF9800;
-}

@@ -1,5 +1,5 @@
 import Animal from './AnimalEmoji';
-import '../App.css';
+import './Parade.css';
 
 export default function Parade({ animals }) {
   return (
