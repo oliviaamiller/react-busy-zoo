@@ -1,12 +1,12 @@
 import './App.css';
 import { useState } from 'react';
-import AnimalList from './Animals/AnimalList';
+import Parade from './Parade/Parade';
 
 function App() {
 
   const [crocSize, setCrocSize] = useState(10);
   const [gorillaSize, setGorillaSize] = useState(10);
-  const [animalArray, setAnimalArray] = useState(['rhino', 'giraffe', 'camel']);
+  const [animalArray, setAnimalArray] = useState(['zebra', 'giraffe', 'hippo']);
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -28,10 +28,17 @@ function App() {
         <button onClick={() => setIsOpen(false)}>Closed</button>
         <button onClick={() => setIsOpen(true)}>Open</button>
       </div>
-      <AnimalList animalArray={animalArray}/>
       <div className='parade'>
-        <button onClick={() => setAnimalArray([...animalArray, 'flamingo'])}>flamingo</button>
-        
+        <Parade animals={animalArray}/>
+        <div className='parade-buttons'>
+          <button onClick={() => setAnimalArray([...animalArray, 'flamingo'])}>flamingo</button>
+          <button onClick={() => setAnimalArray([...animalArray, 'giraffe'])}>giraffe</button>
+          <button onClick={() => setAnimalArray([...animalArray, 'leopard'])}>leopard</button>
+          <button onClick={() => setAnimalArray([...animalArray, 'zebra'])}>zebra</button>
+          <button onClick={() => setAnimalArray([...animalArray, 'hippo'])}>hippo</button>
+          <button onClick={() => setAnimalArray([...animalArray, 'elephant'])}>elephant</button>
+          <button onClick={() => setAnimalArray([...animalArray, 'tiger'])}>tiger</button>
+        </div>
       </div>
     </div>
   );

@@ -17,3 +17,15 @@ html, body, #root, .App {
   color: red;
   font-weight: bold;
 }
+
+.parade {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.animal-list {
+  display: flex;
+  flex-direction: row;
+  font-size: 5rem;
+}
