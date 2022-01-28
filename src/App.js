@@ -34,13 +34,14 @@ function App() {
         </div>
       </div>
       <div className='sign'>
-        <p>Welcome to Emoji Zoo! We are ...</p>
+        <p>Welcome to the Zoo! We are ...</p>
         <OpenSign isOpen={isOpen}/>
         <button onClick={() => setIsOpen(false)}>Good Night</button>
         <button onClick={() => setIsOpen(true)}>Good Morning</button>
       </div>
       <div className='parade'>
         <Parade animals={animalArray}/>
+        <p>animalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparade</p>
         <div className='parade-buttons'>
           <button onClick={() => setAnimalArray([...animalArray, 'flamingo'])}>flamingo</button>
           <button onClick={() => setAnimalArray([...animalArray, 'giraffe'])}>giraffe</button>
