@@ -21,9 +21,12 @@ function App() {
           <button onClick={() => setGorillaSize(gorillaSize + 1)}>Gorilla gets stronger</button>
           <button onClick={() => setCrocSize(crocSize - 1)}>Gorilla attacks Croc</button>
         </div>
-
       </div>
-     
+      <div className='sign'>
+        {isOpen ? 'OPEN' : 'CLOSED'}
+        <button onClick={() => setIsOpen(false)}>Closed</button>
+        <button onClick={() => setIsOpen(true)}>Open</button>
+      </div>
     </div>
   );
 }
