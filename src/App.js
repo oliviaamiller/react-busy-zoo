@@ -34,9 +34,10 @@ function App() {
         </div>
       </div>
       <div className='sign'>
+        <p>Welcome to Emoji Zoo! We are ...</p>
         <OpenSign isOpen={isOpen}/>
-        <button onClick={() => setIsOpen(false)}>Closed</button>
-        <button onClick={() => setIsOpen(true)}>Open</button>
+        <button onClick={() => setIsOpen(false)}>Good Night</button>
+        <button onClick={() => setIsOpen(true)}>Good Morning</button>
       </div>
       <div className='parade'>
         <Parade animals={animalArray}/>
