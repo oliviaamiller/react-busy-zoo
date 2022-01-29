@@ -43,7 +43,7 @@ function App() {
       </div>
       <div className='parade'>
         <Parade animals={animalArray}/>
-        <p>animalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparade</p>
+        <p>animalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparade</p>
         <div className='parade-buttons'>
           <button onClick={() => setAnimalArray([...animalArray, 'flamingo'])}>flamingo</button>
           <button onClick={() => setAnimalArray([...animalArray, 'giraffe'])}>giraffe</button>
