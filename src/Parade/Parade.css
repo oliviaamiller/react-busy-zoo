@@ -1,0 +1,9 @@
+.animal-list {
+    display: flex;
+    flex-direction: row;
+    font-size: 5rem;
+  }
+
+  .animal {
+      margin: 0rem .5rem;
+  }
