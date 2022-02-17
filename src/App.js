@@ -41,8 +41,8 @@ function App() {
           <button onClick={() => setIsOpen(true)}>Good Morning!</button>
         </div>
       </div>
-      <div className='parade'>
-        <Parade animals={animalArray}/>
+      <div className='parade' >
+        <Parade animals={animalArray} title='parade'/>
         <p>animalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparadeanimalparade</p>
         <div className='parade-buttons'>
           <button onClick={() => setAnimalArray([...animalArray, 'flamingo'])}>flamingo</button>

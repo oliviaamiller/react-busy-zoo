@@ -31,3 +31,14 @@ test('croc grows +1 when croc gets stronger button is clicked', () => {
 
   expect(biggerCrocElement).toBe(8);
 });
+
+// test('tiger to be added to the parade array when tiger button is clicked', () => {
+//   render(<App />);
+//   const tigerButtonElement = screen.getByRole('button', { name: /tiger/i });
+
+//   let paradeArray = screen.getByTitle('parade');
+
+//   fireEvent.click(tigerButtonElement);
+
+//   expect(paradeArray[3].textContent).toBe('🐅');
+// });
